@@ -6,7 +6,7 @@ describe.only('Teste funcional de login 1', () => {
         cy.contains('#leftMenuNew > small').click()
     });
 
-
+/// fiz nada aqui testei o commit só pra ver
 
 
 

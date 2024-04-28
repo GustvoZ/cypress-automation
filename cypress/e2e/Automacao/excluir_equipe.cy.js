@@ -21,7 +21,6 @@ describe.only('Excluir equipe', () => {
         //cy.get('#menu8 > [ng-click="showLeftMenuNew]').contains("Parametrizações").click({ force: true });
         //cy.get('#menu8 > [ng-show="v.subMenu.length"]').contains("Parametrizações").click()
         //cy.contains('Parametrizações').click()
-
         //cy.contains('Equipes').click()
 
         
