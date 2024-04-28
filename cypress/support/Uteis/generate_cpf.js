@@ -1,3 +1,5 @@
+/// <reference types="Cypress"/>
+
 function GerarCpfAleatorio() {
     const parte1 = GerarNumeroAleatorio();
     const parte2 = GerarNumeroAleatorio();
