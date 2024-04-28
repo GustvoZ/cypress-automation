@@ -1,7 +1,7 @@
 /// <reference types="Cypress"/>
 
-describe.only('Teste funcional de login 1', () => {
-    it.only('Deve realizar o login com sucesso', () => {
+describe('Teste funcional de login 1', () => {
+    it('Deve realizar o login com sucesso', () => {
         cy.login_teste('mamlabs@mamlabs.com.br','pqpqpqla') 
         cy.contains('#leftMenuNew > small').click()
     });

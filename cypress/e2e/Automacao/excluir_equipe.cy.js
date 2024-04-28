@@ -1,18 +1,18 @@
 /// <reference types="Cypress"/>
 
 describe.only('Excluir equipe', () => {
-    it('Excluir equipe', () => {
+    it.only('Excluir equipe', () => {
         cy.login_teste('mamlabs@mamlabs.com.br','pqpqpqla') 
         cy.get('.content-sidebar-menu > #leftMenuNew').click()
         cy.get('.content-sidebar-menu').contains("Menu").click()
-        cy.wait(1000)
+        cy.wait(1500)
         cy.contains('Menu').click()
-        cy.wait(1000)
+        cy.wait(1500)
         cy.get('[ng-show="!searchLeftMenu"]').click({ force: true })
-        cy.wait(1000)
+        cy.wait(1500)
         cy.get('#menu8 > .ng-binding').click()
         cy.contains('Parametrizações').click()
-        cy.wait(1000)
+        cy.wait(1500)
         cy.get('#subMenu8 > .content-sub-menu > :nth-child(7) > a').click()
         cy.get(':nth-child(19) > .actions > .dropdown > #showAction').click()
         cy.contains('Excluir').click({ force: true })

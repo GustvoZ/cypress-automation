@@ -6,9 +6,17 @@ module.exports = defineConfig({
 
   e2e: {
     setupNodeEvents(on, config) {
+      modifyObstructiveCode: true;
       // implement node event listeners here
     },
-    chromeWebSecurity: false
-        
+    chromeWebSecurity: false,
+  },
+
+  component: {
+    devServer: {
+      framework: "angular",
+      bundler: "webpack",
+    },
+    specPattern: "**/*.cy.ts",
   },
 });
