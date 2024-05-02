@@ -15,7 +15,7 @@ describe('Teste E2E - Realizando login e tentandoa acessar nova admissão online
         cy.get('#menu6 > .ng-binding').click()
         cy.wait(3000)
         cy.get('#subMenu6 > .content-sub-menu > :nth-child(3) > a').click()
-        cy.expec
+        
         //cy.visit(/)
     });
 });
