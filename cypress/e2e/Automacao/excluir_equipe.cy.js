@@ -2,7 +2,7 @@
 
 describe.only('Excluir equipe', () => {
     it.only('Excluir equipe', () => {
-        cy.login_teste('mamlabs@mamlabs.com.br','pqpqpqla') 
+        cy.login_teste_dev('mamlabs@mamlabs.com.br','pqpqpqla') 
         cy.get('.content-sidebar-menu > #leftMenuNew').click()
         cy.get('.content-sidebar-menu').contains("Menu").click()
         cy.wait(1500)
@@ -27,7 +27,7 @@ describe.only('Excluir equipe', () => {
     });
 
     it('Excluir equipe 1', () => {
-        cy.login_teste('mamlabs@mamlabs.com.br','pqpqpqla') 
+        cy.login_teste_dev('mamlabs@mamlabs.com.br','pqpqpqla') 
         cy.wait(5000)
         cy.visit("https://marqponto-backoffice-dev.azurewebsites.net/lista-de-equipes/")
         cy.get(':nth-child(20) > .actions > .dropdown > #showAction > .fa').click()

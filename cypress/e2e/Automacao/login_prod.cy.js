@@ -2,6 +2,6 @@
 
 
 it.only('Deve realizar o login com sucesso', () => {
-    cy.login_teste('empresage@naotem.com.br','147852') 
+    cy.llogin_teste_dev('empresage@naotem.com.br','147852') 
     
 });
