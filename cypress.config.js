@@ -10,7 +10,13 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     chromeWebSecurity: false,
-    modifyObstructiveCode: false,
+    //modifyObstructiveCode: true,
+    includeShadowDom: false,
+    //experimentalRunAllSpecs: false,
+    watchForFileChanges: false,
+    waitForAnimations: true,
+
+
   },
 
   component: {
