@@ -6,17 +6,14 @@ module.exports = defineConfig({
 
   e2e: {
     setupNodeEvents(on, config) {
-      modifyObstructiveCode: false;
-      // implement node event listeners here
+      return {
+        modifyObstructiveCode: false,
+      };
     },
     chromeWebSecurity: false,
-    //modifyObstructiveCode: true,
     includeShadowDom: false,
-    //experimentalRunAllSpecs: false,
     watchForFileChanges: false,
     waitForAnimations: true,
-
-
   },
 
   component: {
