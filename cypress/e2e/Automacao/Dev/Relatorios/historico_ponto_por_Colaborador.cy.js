@@ -26,7 +26,32 @@ context('Teste E2E - Acessando Historico de ponto por colaborador', () => {
         cy.wait(1000)
         cy.get('.ng-isolate-scope > .default-primary-btn').click()
         cy.wait(1000)
-        cy.get(':nth-child(1) > group-input-auto-complete.ng-isolate-scope > .form-group > .ng-isolate-scope > .angucomplete-holder > #_value').type('cassia').type('{downarrow}').type('{enter}')
+        cy.get(':nth-child(1) > group-input-auto-complete.ng-isolate-scope > .form-group > .ng-isolate-scope > .angucomplete-holder > #_value').type('cassia')
+        cy.wait(1000)
+        cy.contains('Cassia').click() // esse metodo bosta funcionou
+        cy.get('.ng-isolate-scope > .default-primary-btn').click()
+        cy.wait(1000)
+        cy.get('.list-selected > .ng-scope').click()
+        cy.get(':nth-child(2) > .ng-isolate-scope > .form-group > .nya-bs-select > .btn').click()
+        cy.wait(1000)
+        cy.get(':nth-child(2) > .ng-isolate-scope > .form-group > .nya-bs-select > .open > .dropdown-menu > :nth-child(2) > .ng-binding').click()
+        cy.wait(1000)
+        cy.get('.ng-isolate-scope > .default-primary-btn').click()
+        cy.wait(1000)
+        cy.get(':nth-child(4) > .ng-isolate-scope > .form-group > .nya-bs-select > .btn').click()
+        cy.wait(1000)
+        cy.get(':nth-child(4) > .ng-isolate-scope > .form-group > .nya-bs-select > .open > .dropdown-menu > :nth-child(2) > .ng-binding').click()
+        cy.wait(1000)
+        cy.get('.ng-isolate-scope > .default-primary-btn').click()
+        cy.wait(1500)
+        cy.get(':nth-child(5) > .ng-isolate-scope > .form-group > .nya-bs-select > .btn').click()
+        cy.wait(1000)
+        cy.get(':nth-child(5) > .ng-isolate-scope > .form-group > .nya-bs-select > .open > .dropdown-menu > :nth-child(2) > .ng-binding').click()
+        cy.wait(1000)
+        cy.get('.ng-isolate-scope > .default-primary-btn').click()
+
+        
+                
 
 
         //cy.get('[ng-model="searchStr"]').type('cassia') -> Fica aqui de lição
