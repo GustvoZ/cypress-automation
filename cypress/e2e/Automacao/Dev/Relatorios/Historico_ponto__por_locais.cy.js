@@ -2,10 +2,10 @@
 
 
 
-context('Teste E2E - Acessando Historico de ponto por mapa', () => {
+context('Teste E2E - Acessando Historico de ponto por locais', () => {
     
     //Acessa o site e faz o login
-    it('Historico de ponto por colaborador', () => {
+    it('Historico de ponto por locais', () => {
         
         cy.login_teste_dev('mamlabs@mamlabs.com.br','pqpqpqla')
         cy.wait(5000)
@@ -20,13 +20,10 @@ context('Teste E2E - Acessando Historico de ponto por mapa', () => {
         cy.wait(1000)
         cy.get('#subMenu4 > .content-sub-menu > :nth-child(6) > a').click()
         cy.wait(1000)
-        cy.get('.content-items-list > :nth-child(3) > .ng-binding').click()
+        // aqui começa a pagina do relatorio
+        cy.get('.content-items-list > :nth-child(6) > .ng-binding').click()
         cy.wait(1000)
-        cy.get('#selectTeam > .btn').click()
-        cy.wait(1000)
-        cy.get('.active > .ng-binding').click()
-        cy.wait(1000)
-        cy.get('.ng-isolate-scope > .default-primary-btn').click()
+        cy.get('.content-items-list > :nth-child(6) > .ng-binding').click()
         
 
 
