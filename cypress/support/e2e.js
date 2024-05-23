@@ -17,5 +17,6 @@
 import './commands'
 import './login_commands_dev'
 import './login_commands_prod'
+require("cypress-log-filter");
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
