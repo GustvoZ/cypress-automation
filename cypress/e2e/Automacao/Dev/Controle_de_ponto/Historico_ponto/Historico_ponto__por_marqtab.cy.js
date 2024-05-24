@@ -22,7 +22,7 @@ context('Teste E2E - Acessando Historico de ponto por foto', () => {
         cy.wait(1000)
         // aqui começa a pagina do relatorio
         cy.get('.content-items-list > :nth-child(5) > .ng-binding').click()
-        cy.wait(21000)
+        cy.wait(1000)
         cy.get('.ng-isolate-scope > .default-primary-btn').click()
 
 
