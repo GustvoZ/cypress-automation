@@ -15,7 +15,12 @@ context('Teste E2E - Acessando Ajustes, abonos e folgas', () => {
         cy.get('.content-items-list > :nth-child(2) > .ng-binding').click()
         cy.wait(1000)
         cy.get('.ng-isolate-scope > .default-primary-btn').click()
-
+        cy.wait(1000)
+        cy.get(':nth-child(3) > .ng-isolate-scope > .form-group > .nya-bs-select > .btn').click()
+        cy.get(':nth-child(3) > .ng-isolate-scope > .form-group > .nya-bs-select > .open > .dropdown-menu > :nth-child(2) > .ng-binding').click()
+        cy.get('.ng-isolate-scope > .default-primary-btn'),click()
+        
+        cy.contains(/Total de horas | Nenhum dado para visualização aqui/)
 
 
 
